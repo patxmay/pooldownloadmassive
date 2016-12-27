@@ -1,0 +1,128 @@
+﻿<ResourceDictionary 
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+   mc:Ignorable="d">
+
+   <!-- - - - colors & brushes - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+   <!--Base Colors-->
+   <Color x:Key="Color_000">#FFffffff</Color>
+   <Color x:Key="Color_001">#FFbadde9</Color>
+   <Color x:Key="Color_002">#FF80397b</Color>
+   <Color x:Key="Color_003">#FFd7e4f2</Color>
+   <Color x:Key="Color_004">#FF558ed5</Color>
+   <Color x:Key="Color_005">#FF80397b</Color>
+   <Color x:Key="Color_006">#FF558ed5</Color>
+   <Color x:Key="Color_007">#FF013858</Color>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+   <!--Base Brushes-->
+   <SolidColorBrush x:Key="Brush00" Color="{StaticResource Color_000}"/>
+   <SolidColorBrush x:Key="Brush01" Color="{StaticResource Color_001}"/>
+   <SolidColorBrush x:Key="Brush02" Color="{StaticResource Color_002}"/>
+   <SolidColorBrush x:Key="Brush03" Color="{StaticResource Color_003}"/>
+   <SolidColorBrush x:Key="Brush04" Color="{StaticResource Color_004}"/>
+   <SolidColorBrush x:Key="Brush05" Color="{StaticResource Color_005}"/>
+   <SolidColorBrush x:Key="Brush06" Color="{StaticResource Color_006}"/>
+   <SolidColorBrush x:Key="Brush07" Color="{StaticResource Color_007}"/>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource Color_006}"/>
+   <SolidColorBrush x:Key="ButtonForegroundBrush" Color="White"/>
+
+   <SolidColorBrush x:Key="Alternation1Brush" Color="{StaticResource Color_000}"/>
+   <SolidColorBrush x:Key="Alternation2Brush" Color="{StaticResource Color_003}"/>
+
+   <SolidColorBrush x:Key="CellBorderBrush" Color="{StaticResource Color_004}"/>
+
+   <SolidColorBrush x:Key="BorderBackgroundBrush" Color="{StaticResource Color_001}"/>
+
+   <SolidColorBrush x:Key="ControlBackgroundBrush" Color="#66FFFFFF"/>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <Style TargetType="{x:Type Button}">
+      <Setter Property="Background" Value="{StaticResource ButtonBackgroundBrush}"/>
+      <Setter Property="Foreground" Value="{StaticResource ButtonForegroundBrush}"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+   </Style>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <Style TargetType="{x:Type ListBox}">
+      <Setter Property="AlternationCount" Value="2"/>
+   </Style>
+
+   <Style TargetType="{x:Type ListBoxItem}">
+      <Setter Property="Background" Value="{StaticResource Alternation1Brush}"/>
+      <Setter Property="Foreground" Value="Black"/>
+      <Setter Property="Height" Value="30" />
+
+      <Style.Triggers>
+         <Trigger Property="ListBox.AlternationIndex" Value="1">
+            <Setter Property="Background" Value="{StaticResource Alternation2Brush}"/>
+            <Setter Property="Foreground" Value="Black"/>
+         </Trigger>
+      </Style.Triggers>
+   </Style>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <Style TargetType="{x:Type DataGrid}" BasedOn="{StaticResource AzureDataGrid}">
+      <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+      <Setter Property="RowBackground" Value="{StaticResource Alternation1Brush}"/>
+      <Setter Property="AlternatingRowBackground" Value="{StaticResource Alternation2Brush}"/>
+
+      <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource CellBorderBrush}"/>
+      <Setter Property="VerticalGridLinesBrush" Value="{StaticResource CellBorderBrush}"/>
+   </Style>
+
+   <Style TargetType="{x:Type DataGridColumnHeader}">
+      <Setter Property="Background" Value="{StaticResource CellBorderBrush}"/>
+      <Setter Property="Foreground" Value="White"/>
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+   </Style>
+
+   <!--<Style TargetType="{x:Type DataGridTextColumn}">
+      <Setter Property="Background" Value="{StaticResource CellBorderBrush}"/>
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+   </Style>-->
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <!--<Style TargetType="{x:Type Border}">
+      <Setter Property="Background" Value="{StaticResource BorderBackgroundBrush}"/>
+   </Style>-->
+
+   <Style TargetType="{x:Type Expander}">
+      <Setter Property="Background" Value="{StaticResource BorderBackgroundBrush}"/>
+   </Style>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <ImageSource x:Key="BackgroundImageSource">/Styles/Default.png</ImageSource>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+   <Style x:Key="CellRightAligned" TargetType="DataGridCell">
+      <Setter Property="HorizontalAlignment" Value="Right" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+   </Style>
+
+   <Style x:Key="CellLeftAligned" TargetType="DataGridCell">
+      <Setter Property="HorizontalAlignment" Value="Left" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+   </Style>
+
+   <Style x:Key="CellCenterAligned" TargetType="DataGridCell">
+      <Setter Property="HorizontalAlignment" Value="Center" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+   </Style>
+
+   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+</ResourceDictionary>

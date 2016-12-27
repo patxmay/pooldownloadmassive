@@ -1,0 +1,15 @@
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\Wanao_Core.dll.config
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\Wanao_Core.dll
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\Wanao_Core.pdb
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\EntityFramework.dll
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\EntityFramework.Firebird.dll
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\Npgsql.dll
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\EntityFramework.xml
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\EntityFramework.Firebird.pdb
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\bin\Release\Npgsql.xml
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\obj\Release\Wanao_Core.dll
+C:\Users\francis-milhau\Documents\Visual Studio 2015\Projects\PoolDownLoadMassive\Wanao_Core\obj\Release\Wanao_Core.pdb

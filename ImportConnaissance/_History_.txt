@@ -1,0 +1,7 @@
+﻿
+* Exec C#
+* Read PDF
+* Export "AllotStd"
+
+#Version 08/12/2016 - 1.0.0
+ • Création

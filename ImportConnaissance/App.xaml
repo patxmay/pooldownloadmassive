@@ -1,0 +1,28 @@
+﻿<Application 
+   x:Class="Wanao.App"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+   xmlns:local="clr-namespace:Wanao"
+   xmlns:vm="clr-namespace:Wanao_Core;assembly=Wanao_Core"
+   DispatcherUnhandledException="Application_DispatcherUnhandledException"
+   StartupUri="MainWindow.xaml"
+   mc:Ignorable="d" >
+
+   <Application.Resources>
+      <ResourceDictionary>
+         <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
+            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedTabControl.xaml" />
+            <ResourceDictionary Source="/Styles/MetroStyle.xaml" />
+                <ResourceDictionary Source="/Styles/Default.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+         <vm:VMLocator x:Key="Locator" d:IsDataSource="True" />
+        </ResourceDictionary>
+   </Application.Resources>
+</Application>
